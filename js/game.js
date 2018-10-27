@@ -23,7 +23,7 @@ score_audio.src = "audio/score.mp3";
 var gap = 95;
 
 // При нажатии на какую-либо кнопку
-document.addEventListener("click", moveUp);
+document.addEventListener("keydown", moveUp);
 
 function moveUp() {
     yPos -= 30;
@@ -42,7 +42,7 @@ var score = 0;
 // Позиция птички
 var xPos = 10;
 var yPos = 150;
-var grav = 1.2;
+var grav = 1.5;
 
 function draw() {
     ctx.drawImage(bg, 0, 0);
